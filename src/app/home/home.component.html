@@ -1,0 +1,140 @@
+
+    <div>
+    <h1 class="career-summary">Career Summary:</h1>
+        <div>
+            <p class="career-gist">       
+                "I am a self made, experienced full stack engineer. I gradudated as CS engineer 2017 and have 4+ years working in full stack development and making various apps for clients and bussiness.
+                I primarily started out as a MEAN stack developer but later adjusted to working with various stacks as required by bussinesses. I adapted and learned various tech stacks by 
+                creating small projects and apps. My experience also includes system design and architecture, collaboration with various stakeholders, working with bussiness managers, pipelining work for other developers and leading a team."                
+            </p>
+        </div>
+    </div>
+
+<div>
+    <div>
+        <h1 class="career-summary">Experience:</h1>
+        <div class="experience-block">
+            <h6>Company: Cognizant Technology Solutions</h6>
+            <h6>Role: Senior Developer</h6>
+            <h6>Project Resp: Senior Full stack developer</h6>
+            <h6>Date: November 2017- Present</h6>
+        </div>
+
+        <div>
+            <div class="project-block">
+                <h4>December 2018 - Present</h4>
+                <h6>Project:Working on Customer facing E-commerce portal</h6>
+                <h6>Role: Frontend Angular Developer (Fullstack Developement .NET with Angular/Frontend Development)</h6>
+                <h6>Technology Used: HTML, CSS, bootstrap, JavaScript, JSON, Angular 2, Angular 4 , Angular 6, Moment JS, Chart JS, Storybook UI , NPM packages , .net MVC &C# , Azure Cloud.</h6>
+                <h6>Custom Integration: PrismDoc viewer by Accusoft <a href="https://www.accusoft.com/products/prizmdoc-suite/prizmdoc-viewer">https://www.accusoft.com/products/prizmdoc-suite/prizmdoc-viewer/</a> </h6>            
+            </div>
+            <div class="project--summaryBlock">
+                <ul>
+                    <ng-container *ngFor="let experiencePoints of firstExperienceBlock.experience">
+                        <li >
+                        {{experiencePoints}} 
+                        </li>
+                    </ng-container>
+                    <ng-container *ngIf="firstExperienceBlock.expand">
+                        <ng-container *ngFor="let expandedExperiencePoints of firstExperienceBlock.experienceExpandedSection">
+                            <li >
+                            {{expandedExperiencePoints}} 
+                            </li>
+                        </ng-container>
+                    </ng-container>
+                </ul>
+                <button class="readMore--button" (click)="firstExperienceBlock.expand = !firstExperienceBlock.expand">
+                    <ng-container *ngIf="firstExperienceBlock.expand;then readLess else readMore">
+                    </ng-container>                
+                </button>           
+
+            </div>
+        </div>
+
+        <ng-template #readMore>
+            Read More
+        </ng-template>
+        <ng-template #readLess>
+            Read Less
+        </ng-template>
+
+        <div>
+            <div class="project-block">
+                <h4>September 2018 - December 2018</h4>
+                <h6>Domain: Retail and commercial goods </h6>
+                <h6>Project: E-commerce project</h6>
+                <h6>Technology Used: HTML, CSS, bootstrap, JavaScript, JSON, Angular 4, Node Js, Express Js ,JimpNpm package , mongo DB , GIT, bit bucket SVN</h6>
+                <h6>Role: MEAN Stack developer</h6>            
+            </div>
+            <div class="project--summaryBlock">
+                <ul>
+                    <ng-container *ngFor="let secondexperiencePoints of secondExperienceBlock.experience">
+                        <li >
+                        {{secondexperiencePoints}} 
+                        </li>
+                    </ng-container>
+                    <ng-container *ngIf="secondExperienceBlock.expand">
+                        <ng-container *ngFor="let expandedSecondExperiencePoints of secondExperienceBlock.experienceExpandedSection">
+                            <li >
+                            {{expandedSecondExperiencePoints}} 
+                            </li>
+                        </ng-container>
+                    </ng-container>
+                </ul>
+                <button class="readMore--button" (click)="secondExperienceBlock.expand = !secondExperienceBlock.expand">
+                    <ng-container *ngIf="secondExperienceBlock.expand;then readLess else readMore">
+                    </ng-container>                
+                </button>
+
+            </div>
+        </div>
+
+        <div>
+            <div class="project-block">
+                <h4>November 2017 - September 2018</h4>
+                <h6>Role: SAP Frontend Employee Facing Application Support</h6>
+                <h6>Domain: Manufacturing And Logistics</h6>               
+            </div>
+            <div class="project--summaryBlock">
+                <ul>
+                    <ng-container *ngFor="let thirdexperiencePoints of thirdExperienceBlock.experience">
+                        <li >
+                        {{thirdexperiencePoints}} 
+                        </li>
+                    </ng-container>
+                    <ng-container *ngIf="thirdExperienceBlock.expand">
+                        <ng-container *ngFor="let expandedThirdExperiencePoints of thirdExperienceBlock.experienceExpandedSection">
+                            <li >
+                            {{expandedThirdExperiencePoints}} 
+                            </li>
+                        </ng-container>
+                    </ng-container>
+                </ul>
+                <button class="readMore--button" (click)="thirdExperienceBlock.expand = !thirdExperienceBlock.expand">
+                    <ng-container *ngIf="thirdExperienceBlock.expand;then HideMDG else readMDG">
+                    </ng-container>                
+                </button>
+                <ng-template #readMDG>
+                    Read MDG Activites
+                </ng-template>
+                <ng-template #HideMDG>
+                    Hide MDG Activites
+                </ng-template>
+
+            </div>
+        </div>
+            
+    </div>
+</div>
+
+<div>
+    <h1 class="career-summary">Personal details:</h1>
+    <div class="project-block">
+        <h6>Education: Bachelor Of Engineering - Computer Sciene & Engineering</h6>
+        <h6>Passout Year: 2017</h6>
+        <h6>Languages fluency: English, hindi, tamil and can understand some amounts of bengali, telugu and malayalam</h6>
+        <h6>Github Repo:<a href="https://github.com/parameshwarao">https://github.com/parameshwarao</a></h6>
+        <h6>Email: <a href="mailto:parameshwarrao.s@gmail.com">parameshwarrao.s@gmail.com</a></h6>                     
+    </div>
+
+</div>

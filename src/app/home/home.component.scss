@@ -1,0 +1,41 @@
+.career-summary{
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+.career-gist{
+    font-family:Georgia,"Times New Roman",Times,serif;
+    font-size: 1.3em;
+    padding: 1.4em;
+}
+
+.experience-block{
+    padding: 1.4em;
+    text-align: left;
+}
+
+.project-block{
+    padding: 1.4em;
+    text-align: left;
+}
+.project--summaryBlock{
+    padding: 1.4em;
+    text-align: left;
+}
+
+
+$readmoreButton:#71d6cd;
+.readMore--button{
+    padding: 0.3em;
+    border: 1px solid white;
+    background-color: $readmoreButton;
+    color: black;
+    font-weight: 400;
+    border-radius: 8px;
+    cursor: pointer;
+    &:hover{
+      color:lighten($readmoreButton,10%) !important;
+      background-color:#4BA2E5;
+      transition: all 0.3s ease-out;
+  }
+}
