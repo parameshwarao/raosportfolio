@@ -42,7 +42,14 @@ export class HomeComponent implements OnInit {
     "Experience working in agile environment and keeping up track with onsite sync calls and Iteration progress.",
     "Created and merged GIT Development branches after having a code review and deployed into DEV Environment with help of Dev-ops team.",
     "Experience moving all GIT QA signoff branches to UAT by merging with master after client Approval.",
-
+    "Experience using source tree GUI for understanding the branching and merging for tagging them with release version number.",
+    "Experience Collaborating with Onsite Technical lead, program manager, client side teams and major Stakeholders for solving complex architecture level changes.",
+    "Experience architecting and designing systems and working with various other architects.",
+    "Experience in learning new tech and creating POC for client and helping them with product innovation and performance improvement.",
+    "Experience writing documentation, teaching team members new concepts, creating POC’s in stackblitz, collaborating and learning.",
+    "Experience in learning new client requested product integration, writing documentation for other developers to refer and maintenance. (prism docs by accusoft was integrated with frontend portal at client’s request) .",
+    "Experience working with ECM system and attributes.",
+    "Experience in mentoring and guiding junior developers"
   ]
   };
 
