@@ -18,7 +18,7 @@
 
     <p class="display--skills-list">
       Html, Css & Scss , Javascript , Typescript, Angular JS, Rxjs, Angular 6+ and above , Jquery , Bootstrap, Node js, Express js , mongoDB,  git,
-      C#, Asp.net MVC, Chart js , Storybook UI , Moment js , npm , azure cloud , GCP , GCP firebase , serverless API, REST API, designing systems and architecture 
+      C#, Asp.net MVC, Chart js , real time communication, socket io , redis db, Storybook UI , Moment js , npm , azure cloud , GCP , GCP firebase , serverless API, REST API, designing systems and architecture 
     </p>
 
   </div>
@@ -43,13 +43,9 @@
     <div class="nav-menu" [ngClass]="expandResponsiveMenu ?'is-active' : ''">      
         <a class="nav-link" [routerLink]="['home']"  [routerLinkActive]="['active']" (click)="expandResponsiveMenu = false">Home</a>      
         <a class="nav-link" [routerLink]="['about']" [routerLinkActive]="['active']" (click)="expandResponsiveMenu = false">About Me</a>
-        <ng-container *ngIf="false">
-        <a class="nav-link" [routerLink]="['tools']" [routerLinkActive]="['active']">Tools</a>
-        <a class="nav-link" [routerLink]="['personalFinance']" [routerLinkActive]="['active']">Personal Finance</a> 
-        <a class="nav-link" [routerLink]="['blog']" [routerLinkActive]="['active']">blog</a>
-        <a class="nav-link" [routerLink]="['DisclaimerComponent']" [routerLinkActive]="['active']">Disclaimer</a>
-      </ng-container>
-        <!--<a class="nav-link">Contact</a>-->            
+        <a class="nav-link" [routerLink]="['personalProjects']" [routerLinkActive]="['active']" (click)="expandResponsiveMenu = false">Personal Projects</a>
+        
+                 
     </div>
   </div>
 </div>
